@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bedel &amp; Flora — 05 décembre 2026</title>
+  <meta name="description" content="Bedel &amp; Flora ont la joie de vous inviter à leur mariage, le 5 décembre 2026 à Gagnoa.">
+  <meta name="theme-color" content="#45101a">
+
+  <!-- Aperçu lors du partage (WhatsApp, Facebook…).
+       Après la mise en ligne, remplacez VOTRE-SITE par votre vrai lien Vercel, puis retirez les commentaires :
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bedel & Flora — 05 décembre 2026">
+  <meta property="og:description" content="Nous avons la joie de vous inviter à notre mariage.">
+  <meta property="og:image" content="https://VOTRE-SITE.vercel.app/photos/accueil.jpg">
+  -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236e1423'/%3E%3Ctext x='32' y='41' font-size='24' text-anchor='middle' fill='%23f3eadc' font-family='serif'%3EB%26F%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <noscript><style>#intro{display:none}</style></noscript>
+</head>
+
+<body class="locked">
+
+  <!-- ===== OUVERTURE : l'enveloppe ===== -->
+  <div id="intro" class="intro" role="dialog" aria-modal="true" aria-label="Invitation de mariage">
+    <div class="scene">
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+
+        <div class="env-card">
+          <div class="card-inner">
+            <span class="card-kicker" id="cardKicker">Mariage</span>
+            <span class="card-names" id="cardNames">Bedel &amp; Flora</span>
+            <span class="card-line" aria-hidden="true"></span>
+            <span class="card-date" id="cardDate">05 · 12 · 2026</span>
+          </div>
+        </div>
+
+        <div class="env-front">
+          <svg viewBox="0 0 100 68" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 68 L50 38 L100 68" fill="none" stroke="rgba(60,10,20,.16)" stroke-width=".5" vector-effect="non-scaling-stroke"/>
+            <path d="M0 0 L50 38 L100 0" fill="none" stroke="rgba(60,10,20,.12)" stroke-width=".5" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </div>
+
+        <div class="env-flap"></div>
+
+        <div class="seal" aria-hidden="true">
+          <span class="seal-half l"><span class="seal-face"><span class="seal-txt">B&amp;F</span></span></span>
+          <span class="seal-half r"><span class="seal-face"><span class="seal-txt">B&amp;F</span></span></span>
+        </div>
+      </div>
+
+      <p class="intro-hint" id="introHint">Une invitation vous attend</p>
+      <button class="btn btn-open" id="openBtn" type="button">Ouvrir notre invitation</button>
+    </div>
+  </div>
+
+  <!-- ===== LE SITE (rempli par script.js à partir de config.js) ===== -->
+  <main id="site" tabindex="-1" inert>
+    <noscript><p style="padding:40px 24px;text-align:center">Merci d'activer JavaScript pour découvrir notre invitation.</p></noscript>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
